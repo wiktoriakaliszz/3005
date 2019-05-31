@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'thasadithregular';
+  src: url('fonts/thasadith-regular-webfont.woff2') format('woff2'),
+    url('fonts/thasadith-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'league_scriptleague_script';
+  src: url('fonts/leaguescript-webfont.woff2') format('woff2'),
+    url('fonts/leaguescript-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a:link {
+  color: #f17db2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #dc287a;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #64905b;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-family: 'thasadithregular';
+}
+
+
+.wrapper {
+  /*sidebar*/
+  width: 200px;
+  margin-right: 10px;
+  position: absolute;
+  top: 790px;
+  right: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.page-wrapper {
+  /*banner*/
+  width: 700px;
+  position: relative;
+  margin: auto;
+  background-image: url(img/banner.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.summary {
+  /*first p*/
+  padding: 650px 0 20px 10px;
+  text-align: center;
+  margin: auto;
+}
+
+h3 {
+  font-family: 'league_scriptleague_script';
+  color: #f17db2;
+  font-size: 25px;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+  text-align: left;
+  width: 480px;
+  padding-top: 20px;
+}
+
+h1, h2 {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 200px 0 20px 10px;
+  text-align: center;
+  margin: auto;
+
+}
