@@ -16,20 +16,24 @@
 
 a:link {
   color: #f17db2;
+  cursor: url('img/cursor.png'), auto;
   text-decoration: none;
 }
 
 a:hover {
+  cursor: url('img/cursor.png'), auto;
   color: #dc287a;
   text-decoration: none;
 }
 
 a:visited {
+  cursor: url('img/cursor.png'), auto;
   color: #64905b;
   text-decoration: none;
 }
 
 body {
+  cursor: url('img/cursor.png'), auto;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   font-family: 'thasadithregular';
