@@ -32,40 +32,74 @@ a:visited {
   text-decoration: none;
 }
 
-body {
-  cursor: url('img/cursor.png'), auto;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  font-family: 'thasadithregular';
+::selection {
+  color: #64905b;
 }
 
-
-.wrapper {
-  /*sidebar*/
-  width: 200px;
-  margin-right: 10px;
-  position: absolute;
-  top: 790px;
-  right: 0;
-  padding: 0;
-  text-align: right;
+body, html {
+  cursor: url('img/cursor.png'), auto;
+  font-family: 'thasadithregular';
+  max-width: 800px;
+  margin: auto;
 }
 
 .page-wrapper {
-  /*banner*/
-  width: 700px;
-  position: relative;
-  margin: auto;
-  background-image: url(img/banner.png);
-  background-position: top center;
-  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 65% 25%;
+  grid-template-rows: auto;
+  justify-content: center;
+  grid-gap: 20px;
 }
 
 .summary {
-  /*first p*/
-  padding: 650px 0 20px 10px;
   text-align: center;
-  margin: auto;
+}
+
+.preamble {
+  text-align: center;
+  height: 500px;
+  background-image: url(img/banner2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+h3 {
+  animation: neon 3s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow:
+      0 0 1px rgba(202, 228, 225, 0.92),
+      0 0 2px rgba(202, 228, 225, 0.34),
+      0 0 0px rgba(202, 228, 225, 0.92)
+      0 0 0px rgba(202, 228, 225, 0.92)
+      0 0 2px rgba(202, 228, 225, 0.92)
+      0 0 2px #dc287a;
+  }
+
+  to {
+    text-shadow:
+      0 0 1px rgba(202, 228, 225, 0.98),
+      0 0 3px rgba(202, 228, 225, 0.42),
+      0 0 3px #f17db2,
+      0 0 3px #f17db2,
+      0 0 3px #dc287a,
+      0 0 3px #f17db2;
+  }
+}
+
+.wrapper {}
+
+.intro {
+  background-image: url(img/banner.png);
+  background-repeat: no-repeat;
+  padding-top: 650px;
+  grid-column: 1 / span 2;
+}
+
+footer {
+  text-align: center;
 }
 
 h3 {
@@ -74,20 +108,6 @@ h3 {
   font-size: 25px;
 }
 
-.preamble, .explanation, .participation, .benefits, .requirements {
-  text-align: left;
-  width: 480px;
-  padding-top: 20px;
-}
-
 h1, h2 {
   display: none;
-}
-
-footer {
-  text-align: center;
-  padding: 200px 0 20px 10px;
-  text-align: center;
-  margin: auto;
-
 }
